@@ -57,7 +57,7 @@
 	/* change to block to show, none to hide */
 	--discord-icon: none; /* discord icon */
 	--personal-icon: block; /* personal icon */
-	--personal-icon-url: url('https://svgshare.com/i/11uq.svg'); /* custom icon url */
+	--personal-icon-url: url('https://www.svgrepo.com/show/530572/accelerate.svg'); /* custom icon url */
 	--personal-icon-size: auto;
 
 	/* filter uncolorable elements to fit theme */
@@ -617,16 +617,14 @@ button.button_afdfd9 /* small buttons */,
 	display: var(--discord-icon);
 }
 .childWrapper__01b9c:has(> svg:not(.favoriteIcon_adf80e))::before {
-	content: '';
-	display: var(--personal-icon);
-	position: absolute;
-	width: 65%;
-	height: 65%;
-	background: var(--text-4);
-	-webkit-mask-image: var(--personal-icon-url);
-	-webkit-mask-size: var(--personal-icon-size);
-	-webkit-mask-repeat: none;
-}
+    content: '';
+    display: var(--personal-icon);
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    background: var(--text-4);
+    -webkit-mask: var(--personal-icon-url) center / contain no-repeat;
+  }
 .wrapper_d281dd:hover .childWrapper__01b9c::before {
 	transition: background-color 0.15s ease-out, transform 0.3s ease-out;
 	transform: rotate(0deg) scale(1);
