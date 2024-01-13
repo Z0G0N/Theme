@@ -623,7 +623,7 @@ button.button_afdfd9 /* small buttons */,
 	width: 65%;
 	height: 65%;
 	background: var(--text-4);
-	mask-image: var(--personal-icon-url);
+	mask-image: url('https://svgshare.com/s/11uq');
 	mask-size: var(--personal-icon-size);
 	mask-repeat: none;
 }
