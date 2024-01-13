@@ -53,12 +53,12 @@
 	--roundness-xs: 10px; /* channels, buttons */
 	--roundness-xxs: 8px; /* searchbar, small elements */
 
-	/* direct messages personal icon */
+	/* direct messages moon icon */
 	/* change to block to show, none to hide */
 	--discord-icon: none; /* discord icon */
-	--personal-icon: block; /* personal icon */
-	--personal-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/6/65/Z0G0Ns_Logo_1_SVG.svg'); /* custom icon url */
-	--personal-icon-size: auto;
+	--moon-icon: block; /* moon icon */
+	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/6/65/Z0G0Ns_Logo_1_SVG.svg'); /* custom icon url */
+	--moon-icon-size: auto;
 
 	/* filter uncolorable elements to fit theme */
 	/* (just set to none, they're too much work to configure) */
@@ -612,20 +612,20 @@ button.button_afdfd9 /* small buttons */,
 	background-color: var(--idle-indicator) !important;
 }
 
-/* custom dm button personal icon */
+/* custom dm button moon icon */
 .childWrapper__01b9c > svg:not(.favoriteIcon_adf80e) {
 	display: var(--discord-icon);
 }
 .childWrapper__01b9c:has(> svg:not(.favoriteIcon_adf80e))::before {
 	content: '';
-	display: var(--personal-icon);
+	display: var(--moon-icon);
 	position: absolute;
 	width: 65%;
 	height: 65%;
 	background: var(--text-4);
-	mask-image: var(--personal-icon-url);
-	mask-size: var(--personal-icon-size);
-	mask-repeat: none;
+	-webkit-mask-image: var(--moon-icon-url);
+	-webkit-mask-size: var(--moon-icon-size);
+	-webkit-mask-repeat: none;
 }
 .wrapper_d281dd:hover .childWrapper__01b9c::before {
 	transition: background-color 0.15s ease-out, transform 0.3s ease-out;
